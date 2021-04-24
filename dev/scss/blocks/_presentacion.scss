@@ -1,0 +1,60 @@
+.portada{
+    height:100vh;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    color: #487eb0;
+
+    @include laptop{
+        // padding: 10rem 10rem;
+        flex-direction:row;
+        // justify-content:space-around;
+        
+    }
+
+    //caja 1
+    &__box{
+        text-align:center;
+        padding: 0 5rem;
+        margin: 3rem;
+        // display: flex;
+        // flex-direction:column;
+        // justify-content:center;
+        // align-items:center;
+
+        @include laptop{
+            padding: 0;
+        }
+
+    }
+
+    &__title{
+        font-size:6rem;
+        padding: 0;
+        margin: 0;
+
+        & span{
+            padding: 0;
+            margin: 0;
+            font-weight:200;
+        }
+    }
+
+    &__paragraph{
+        padding: 0;
+        margin: 0;
+        font-size:2rem;
+        // color: #f5f6fa;
+    }
+
+    //caja 2
+    &__image{
+        margin: 3rem;
+        width:40vw;
+
+        @include laptop{
+            width:20vw;
+        }
+    }
+}

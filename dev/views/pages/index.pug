@@ -1,11 +1,14 @@
-//- extends ../templates/template
+extends ../templates/template
 
-//- block header
-//-     include ../includes/header-menu
+block nav
+    include ../includes/navegador
 
-//- block slider-logo
-//-     include ../includes/header-slider-logo
+block header
+    include ../includes/header-presentacion
 
 block main
-    h1.title Bienvenido el proyecto web esta en construcción
+    include ../includes/contenido
+
+block footer
+    include ../includes/footer
 

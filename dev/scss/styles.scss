@@ -1,0 +1,14 @@
+@import "config/fonts";
+@import "config/color";
+
+@import "mixins/breakpoints";
+@import "mixins/reset-list";
+
+@import "base/base";
+@import "base/normalize";
+
+@import "blocks/navegador";
+@import "blocks/presentacion";
+@import "blocks/contenido";
+@import "blocks/footer";
+

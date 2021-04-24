@@ -1,0 +1,1 @@
+"use strict";var toggleMenu=document.getElementById("menu-toggle"),topMenu=document.getElementById("top-menu");toggleMenu.addEventListener("click",function(){topMenu.classList.toggle("activador")});
