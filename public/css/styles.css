@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 :root { --green: #009933; --dark-green: #09772E; --primary:#ffffff; --secondary:#000000; --shade: 0px 0px 12px -1px rgba(0,0,0,0.5); --border-line: 1px solid rgba(0, 0, 0, 0.3); --line: 1px solid red; --curve-little:.5rem; --curve-big:1rem; --curve-botton:.5rem; }
 
-html { font-size: 62.5%; font-family: "Poppins", sans-serif; }
+html { font-size: 62.5%; font-family: "Poppins", sans-serif; scroll-behavior: smooth; }
 
 body { padding: 0; background-color: #fff; }
 
