@@ -44,6 +44,9 @@
         padding:2.5rem;
         height:100vh;
     }
+    body.dark & {
+        color: #f5f6fa;
+    }
     
     &__grandtitle{
         font-size:3rem;

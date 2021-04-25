@@ -40,6 +40,10 @@
         &-logo{
             color: #f5f6fa;
             text-decoration: none;
+            display:flex;
+            justify-content: start;
+            align-items:center;
+            
         }
         &-show{
             @include laptop{

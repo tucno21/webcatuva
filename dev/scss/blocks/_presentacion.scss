@@ -27,6 +27,10 @@
             padding: 0;
         }
 
+        body.dark & {
+            color: #f5f6fa;
+        }
+
     }
 
     &__title{
@@ -39,6 +43,8 @@
             margin: 0;
             font-weight:200;
         }
+
+
     }
 
     &__paragraph{

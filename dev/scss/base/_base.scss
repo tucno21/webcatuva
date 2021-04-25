@@ -11,6 +11,10 @@ body{
     // box-sizing: border-box;
     // background-color: $background-color;
     background-color: #f5f6fa;
+
+    &.dark{
+		background:#222f3e;
+	}
     
 }
 
