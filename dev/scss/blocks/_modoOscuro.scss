@@ -8,6 +8,7 @@
 	cursor: pointer;
 	display:flex;
 	outline: none;
+	top: 1.3rem;
     left:1rem;
 	height:2rem;
     // transform:translateX(-50%);
@@ -15,8 +16,8 @@
 	&::after{
 		content:"";
 		display:block;
-		width: 2.4rem;
-		height:2.1rem;
+		width: 2.1rem;
+		height:2rem;
 		position: absolute;
 		background:#f5f6fa;
 		top: 0;
@@ -38,19 +39,20 @@
 	}
 
 	span{
-		width:1.9rem;
-		height:1.9rem;
-		line-height:2rem;
-		display:block;
-		background: none;
+		// width:1.9rem;
+		// height:1.9rem;
+		// line-height:2rem;
+		// display:block;
+		// background: none;
 		color:#feca57;
 
 		& i {
-			font-size:2rem;
+			font-size:1.6rem;
 			display:flex;
 			justify-content:center;
 			align-items:center;
-			padding:0rem;
+			padding:0.1rem 0;
+			// margin-left: 0.1rem;
 		}
 	}
 }

@@ -2,6 +2,7 @@
     background-color: #487eb0;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     position: fixed;
     font-size: 1.5rem;
     width:100%;
@@ -16,7 +17,7 @@
         padding:0 2rem;
         
         &-logo{
-            font-size:3rem;
+            font-size:3.5rem;
             color: #f5f6fa;
             text-decoration: none;
             font-weight:bold;
@@ -70,8 +71,9 @@
             top: 0;
             gap: 0.5rem;
             margin-right: 1rem;
-
+            
             &-link{
+                text-transform:none;
                 padding: 0;
                 width:auto;
                 margin-top:0;
@@ -79,7 +81,7 @@
                 
                 &:hover{
                     border-radius: 10px 0 10px 0;
-                    height:3.3rem;
+                    height:4rem;
                     display:flex;
                     justify-content:center;
                     align-items:center;
