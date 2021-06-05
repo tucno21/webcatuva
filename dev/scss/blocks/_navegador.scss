@@ -1,108 +1,98 @@
 .nav{
+    background-color: #487eb0;
     display: flex;
-    flex-direction: column;
-    font-size: 1.5rem;
+    justify-content: space-between;
     position: fixed;
+    font-size: 1.5rem;
     width:100%;
     top: 0;
     left: 0;
     z-index: 100;
+    padding:1rem 0;
+    box-shadow: 0px 2px 10px 0px rgba(0,0,0,0.5);
     
-
-    @include laptop{
-        flex-direction: row;
-        justify-content: space-between;
-        background-color: #487eb0;
-        box-shadow: 0px 2px 10px 0px rgba(0,0,0,0.5);
+    &__header{
+        display:flex;
+        padding:0 2rem;
+        
+        &-logo{
+            font-size:3rem;
+            color: #f5f6fa;
+            text-decoration: none;
+            font-weight:bold;
+        }
     }
     
     
-    &__menu{
-        font-weight: bold;
-        font-size:3.5rem;
+    &__btnMenu{
+        padding:0 2rem;
         color: #f5f6fa;
+        font-size: 3rem;
 
-
-        //LOGO
-        &-a{
-            display: flex;
-            justify-content:space-between;
-            // border-bottom: 1px solid #353b48;
-            padding: 1rem;
-            background-color: #487eb0;
-            box-shadow: 0px 2px 10px 0px rgba(0,0,0,0.5);
-            @include laptop{
-                padding: 1rem 4rem;
-                box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);
-            }
-
+        @include laptop{
+            display: none;
         }
-        &-logo{
-            color: #f5f6fa;
-            text-decoration: none;
-            display:flex;
-            justify-content: start;
-            align-items:center;
-            
-        }
-        &-show{
-            @include laptop{
-                display: none;
-            }
-        }
-        
+    }
 
-        //MENU
-        &-b{
-            font-size: 2.8rem;
-            height:80vh;
-            background-color: #487eb0;
-            display: flex;
-            flex-direction: column;
-            align-items:center;
-            justify-content:center;
-            position: relative;
-            transition: transform .3s;
-            transform: translateX(100%);
 
-            @include laptop{
-                transform: translateX(0);
-                flex-direction: row;
-                height:auto;
-                font-size: 2rem;
-            }
-        }
-        
+    &__menu{
+        position: absolute;
+        top: 5.5rem;
+        width: 100%;
+        height:90vh;
+        background-color: #487eb0;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items:center;
+        transition: transform .3s;
+        transform: translate(100%);
+
+
         &-link{
+            font-size:2rem;
+            text-decoration: none;
+            text-transform:uppercase;
             color: #f5f6fa;
             padding: 2.1rem;
-            text-decoration: none;
             font-weight: 400;
+            width:80%;
+            text-align:center;
+            margin-top:1rem;
+        }
 
-            @include laptop{
-                display: flex;
-                justify-content:center;
-                align-items:center;
-                padding: 0 2rem;
+        @include laptop{
+            transform: translate(0);
+            position: relative;
+            height:auto;
+            flex-direction: row;
+            justify-content: flex-end;
+            top: 0;
+            gap: 0.5rem;
+            margin-right: 1rem;
+
+            &-link{
+                padding: 0;
+                width:auto;
+                margin-top:0;
+                padding: 0 1.5rem;
                 
                 &:hover{
                     border-radius: 10px 0 10px 0;
-                    height:5rem;
+                    height:3.3rem;
+                    display:flex;
+                    justify-content:center;
+                    align-items:center;
                     transition:background-color .5s;
                     background-color: rgba(255,255,255,0.3);
-                    // color: rgba(0,0,0,0.9);
                     color: #487eb0;
                 }
             }
         }
-
-
     }
-
 }
 
-
-.nav__menu-b.activador{
-    transition: transform .3s;
+.activadorShow{
     transform: translate(0);
 }
+
